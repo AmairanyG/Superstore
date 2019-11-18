@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BACC-Superstore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a> -->
+      <a class="navbar-brand" style="z-index:3;width:235px;" href="index.html"><img src="Images/BACC Logo.png"></a> 
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="case_study.html">Case Study</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" style="color: #6D8092">
+                Dashboards
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="executive_overview.html">Executive Overview</a>
+                <a class="dropdown-item" href="product.html">Product Performance</a>
+                <a class="dropdown-item" href="customer.html">Customer Performance</a>
+                <a class="dropdown-item" href="shipping.html">Shipping Trends</a>
+                <a class="dropdown-item" href="forecast.html">Sales Forecast</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container">
+    <div class="row">
+      <div>
+        <!-- Box content  -->
+        <div class="box">
+          <h3 class="title">Superstore Analysis</h3>
+          <hr>
+          <img src="Images/Superstore.PNG" class="center vizualization"  alt="Superstore Logo">
+          <h5 class="title">Overview:</h5>  
+            <p>Since 2012, our client Superstore has implemented a robust infrastructure for collecting data on sales, 
+              customers, product performance, and more.</p>
+            <p>However, while the data is regularly collected and stored in a data lake, the Superstore team has yet to 
+              implement a dashboard or sophisticated reporting process. As a result, they have to resort manually 
+              pulling data from various sources and create time-intensive and non-scaleable Excel reports. This lag of 
+              real-time analysis leads to “gut feeling” types of work/management styles and an overall blurred sense of 
+              company-wide performance. </p> 
+            <p>The CEO and other high-level executives have a number of questions on the performance of their company, 
+              but cannot seem to get their team to provide fast enough insights, so they decided to get help from BACC 
+              to unlock their data. </p>
+          
+          <h5 class="title">Business Questions:</h5>               
+            <ol>
+                <li>How do we fix our data process so that Superstore can get reports faster?</li>
+                <li>How are sales performing year-over-year?</li>
+                <li>Which products are performing well? Which are not?</li>
+                <li>Who are our most profitable customers?</li>
+                <li>How efficient is the warehouse team at shipping products on time?</li>
+                <li>What does our sales projection look like for next year?</li>
+            </ol>
+
+            <p>After meeting with their team and examining their data we broke down Superstore’s into six parts:</p>
+            <ol>
+                <li>Backend Remodel</li>
+                <li>Executive Overview</li>
+                <li>Product Portfolio Performance</li>
+                <li>Customer Performance</li>
+                <li>Warehouse Operations Overview</li>
+                <li>Sales Forecast</li>
+            </ol>
+            <h5 class="title">Technology Used:</h5>
+            <hr>
+            <ul>
+                <li>Cloud Storage - Amazon Web Services (S3, RDS)</li>
+                <li>Cloud Computing - Zepl, PySpark</li>
+                <li>Relational Database - PostgreSQL, PgAdmin</li>
+                <li>Machine Learning - Python (Sklearn, TensorFlow, Pandas)</li>
+                <li>Data Visualization - Tableau </li>
+                <li>Web Development - HTML, CSS, Bootstrap, AWS</li>  
+            </ul>          
+        </div>  
+      </div>
+    </div>     
+  </div> 
+  <!-- Content Section -->
+  <div class="container">
+    <div class="row">
+      <div class="row" style="padding-left: 5x;">
+        <div class="col-12">
+          <!-- Left box  -->
+          <div class="box">
+            <div class="col-12">
+              <h3 class="title">Data Pipeline:</h3> 
+                <hr>
+                  <div class="row">
+                    <div class="column2" style="padding: 5px; width:45% ; height: 60%">
+                      <div class="title">Original Pipeline</div>
+                        <img src="Images/original_process.PNG" alt="Original Process">
+                        <br>
+                        <br>
+                          <p>During this process data were extracted mainly from sources like Salesforece, SAP, and Oracle 
+                            in the form of excel files. The data was then joined and cleaned in Excel into a master dataset
+                            for exploratory analysis and visualization using pivot table and pivot charts.
+                          </p>
+                          <p>There are many downsides to this process. The entire ETL process is done using local computer 
+                            memory, Superstore team has to work with super large excel file, and they would need to go through 
+                            the entire process every time for a new analysis.</p>
+                    </div> 
+                    <div class="column2" style="padding: 5px; width:45% ; height: 60%">
+                      <div class="title">Optimized Pipeline Process</div>
+                        <img src="Images/optimized_process.PNG" alt="Optimized Process">
+                        <br>
+                        <br>
+                          <p>We created a solution by incorporating Relational Database Management and cloud computing. Instead 
+                            of extracting data onto the local computer, we stored them on a database on the cloud that would provide 
+                            us with limitless storage capacity.
+                          </p>
+                          <p>They are stored in a relational database structure, making our data 
+                            more scalable and easy to maintain. The data is then loaded onto a cloud platform for cleaning and transformation. 
+                            Utilizing cloud computing can drastically reduce the error in the ETL process made through concatenating different 
+                            excel files. In addition, cloud platform also allows EDA and aggregation, so we can feed the most accurate and 
+                            relevant data to our Tableau dashboard.The size of data can be stored is increased from local storage capacity, 
+                            which is typically less than 500GB, to over 500 TB. The work constraint is lifted by switching to cloud as well 
+                            since performing ETL on local computer can easily eat up computer memory. 
+                          </p>
+                    </div>
+                  </div>    
+              <p>By utilizing Cloud and RDS, we greatly improved the data pipeline’s work efficiency and performance, mitigated work constraints, 
+                and created more structured data with much higher clarity and accuracy.</p>
+            </div>
+          </div>  
+        </div>
+      </div>     
+    </div> 
+  </div>
+  <!-- Content Section -->
+
+  <div class="box">
+    <div class='tableauPlaceholder' id='viz1574073915680' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;ProductDrilldown&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BACC-Superstore&#47;ProductDrilldown' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;ProductDrilldown&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574073915680');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <br>
+        <br>
+          <p>Is there a trend in sales for the product categories?</p>
+          <ul>
+              <li>Furniture, Office Supplies, and Technology experience higher sales in the months of September through December. Sales also pick-up in March.</li> 
+              <li>This metric shows us when we are having our most sales.</li>
+              <li>We can filter the data by region and category.</li>
+          </ul>
+      <br>
+          <p> How are products doing in terms of sales in each state?</p>
+          <ul>
+              <li> Used LOD to compute average domestic category sales.</li>
+              <li>Red means sales are underperforming and green means sales are surpassing the average domestic category sales.</li>
+              <li>This metric is important because it can tell us where we need to improve our sales. For example, in New Mexico is underperforming in all the categories, so we need to devise better marketing strategies to gain more market share.</li>
+          </ul>  
+  </div>
+        
+  <div class="box">
+      <div class='tableauPlaceholder' id='viz1574066476408' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;CustomerPerformance&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BACC-Superstore&#47;CustomerPerformance' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;CustomerPerformance&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574066476408');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1377px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> 
+        <br>
+          <br>
+            <p>What is our Consumer Landscape across the United States? </p>
+            <ul>
+                <li>Western region leads in all categories, followed closely by the Eastern region.</li> 
+                <li>The central states are generating more sales than the South; however, they are also leading to the lowest profit ratios</li>
+                <li>There is an expected correlation between the sales and profit. Generally we can see that with more sales, there is higher profit being generated.</li>
+            </ul>
+        <br>
+            <p>Recommendations:</p>
+            <ul>
+                <li>Motive to Increase Sales and Profits across all channels.</li>
+                <li>Increase operational efficiency unlocking insights about trends and patterns to improve decisions to drive better operations and save millions</li>
+            </ul>  
+    </div>   
+    
+    <div class="box">
+        <div class='tableauPlaceholder' id='viz1574066646387' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;Shipping&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BACC-Superstore&#47;Shipping' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;Shipping&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574066646387');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> 
+          <br>
+            <br>
+              <p>How efficient is the warehouse at shipping products on time?</p>
+              <ul>
+                  <li>About 50% of all products are shipped early, the other half is almost evenly split between items being shipped on time and late.</li> 
+                  <li>Same day shipment takes first priority; as a result, over 95% of shipments are on time.</li>
+                  <li>The major focus of attention must be on First class shipments where about 80% of shipments are late.</li>
+                  <li>Second class can also use some attention to decrease late shipments.</li>
+                  <li>Standard shipping is doing pretty decent with only 10% of the items being shipped late</li>
+                  <li>The major focus of attention must be on First class shipments where about 80% of shipments are late.</li>
+              </ul>
+          <br>
+              <p>Recommendations:</p>
+              <ul>
+                  <li>Adjust shipping windows. For first class allow 1 to 2 days to ship, and for second class 3 to 4 days. This will drastically decrease the percentage of products that are shipped late.</li>
+                  <li>Although there are certain things we can’t control, extending a shipping window for a day or two will allow room for flexibility in ensuring all orders are shipped within the expected time.</li>             </li>
+              </ul>  
+          <br>
+              <p>In conclusion, we were able to take their raw data and now Superstore is able make real-time insights with more speed, precision, and confidence to grow their company.</p>
+        <h4 class="title" style="text-align: center">“When it comes to data, we got your BACC”</h4> 
+        <br>
+    </div>   
+     
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer">Copyright &copy; BACC 2019</div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
