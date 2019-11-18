@@ -46,7 +46,7 @@ img{
     height:100% !important;
 }
 .active, .panel:hover{
-    border-color:#990D35;
+    border-color:#E7E7E7;
     border-style: solid; 
     
 }
@@ -149,13 +149,6 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #4CAF50;
   }
-  
-  /* Add a background color and some padding around the form */
-  /* .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  } */
 
 /* Footer */
 footer{
@@ -178,7 +171,7 @@ padding-top: 13px;
 /* Media Queries */
 @media(max-width: 992px){
 .navbar-expand-lg{
-background-color: #990D35 !important;
+background-color: white!important;
 }
 .navbar{
     max-height: none; 
