@@ -63,7 +63,7 @@
         <div class="box">
           <h3 class="title">Superstore Analysis</h3>
           <hr>
-          <img src="Images/Superstore.PNG" class="center vizualization"  alt="Superstore Logo">
+          <img src="Images/Superstore2.PNG" class="center vizualization"  alt="Superstore Logo">
           <h5 class="title">Overview:</h5>  
             <p>Since 2012, our client Superstore has implemented a robust infrastructure for collecting data on sales, 
               customers, product performance, and more.</p>
@@ -76,24 +76,24 @@
               but cannot seem to get their team to provide fast enough insights, so they decided to get help from BACC 
               to unlock their data. </p>
           
-          <h5 class="title">Business Questions:</h5>               
+          <h5 class="title">Business Requirements:</h5>               
             <ol>
-                <li>How do we fix our data process so that Superstore can get reports faster?</li>
-                <li>How are sales performing year-over-year?</li>
+                <li>How do we fix our data process so reports get out faster?</li>
+                <li>How are sales in each region year-over-year?</li>
                 <li>Which products are performing well? Which are not?</li>
                 <li>Who are our most profitable customers?</li>
                 <li>How efficient is the warehouse team at shipping products on time?</li>
                 <li>What does our sales projection look like for next year?</li>
             </ol>
 
-            <p>After meeting with their team and examining their data we broke down Superstore’s into six parts:</p>
+            <h5 class="title">BACC Solutions:</h5>    
             <ol>
-                <li>Backend Remodel</li>
-                <li>Executive Overview</li>
-                <li>Product Portfolio Performance</li>
-                <li>Customer Performance</li>
-                <li>Warehouse Operations Overview</li>
-                <li>Sales Forecast</li>
+                <li>Data Pipeline Revamp</li>
+                <li>Executive Sales Dashboard</li>
+                <li>Product Portfolio Dashboard</li>
+                <li>Customer Performance Dashboard</li>
+                <li>Shipping Trends Dashboard</li>
+                <li>Sales Forecast Dashboard</li>
             </ol>
             <h5 class="title">Technology Used:</h5>
             <hr>
@@ -118,7 +118,7 @@
           <!-- Left box  -->
           <div class="box">
             <div class="col-12">
-              <h3 class="title">Data Pipeline:</h3> 
+              <h3 class="title">Data Pipeline Revamp</h3> 
                 <hr>
                   <div class="row">
                     <div class="column2" style="padding: 5px; width:45% ; height: 60%">
@@ -152,9 +152,16 @@
                             since performing ETL on local computer can easily eat up computer memory. 
                           </p>
                     </div>
-                  </div>    
-              <p>By utilizing Cloud and RDS, we greatly improved the data pipeline’s work efficiency and performance, mitigated work constraints, 
-                and created more structured data with much higher clarity and accuracy.</p>
+                  </div>
+                <h5 class="title">Traditional Data Pipeline Vs. Cloud</h5>
+                  <img src="Images/traditional_vs_cloud.PNG" alt="Traditional vs Cloud">    
+                  <p>This table shows some of the improvement after adapting to the new process. The storage is no longer on local computer 
+                    that takes computer memory. The size of data can be stored is increased from local storage capacity, which is typically less 
+                    than 500GB, to over 500 TB. The work constraint is lifted by switching to cloud as well since performing ETL on local 
+                    computer can easily eat up computer memory.</p> 
+                  
+                  <p>By utilizing Cloud and RDS, we greatly improved the data pipeline’s work efficiency and performance, mitigated work constraints, 
+                  and created more structured data with much higher clarity and accuracy.</p>
             </div>
           </div>  
         </div>
@@ -163,18 +170,22 @@
   </div>
 
   <!-- Content Section -->
+  <div class="box" style="align-items: center">
+      <div class='tableauPlaceholder' id='viz1574120071958' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;ExecutiveOverview&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BACC-Superstore&#47;ExecutiveOverview' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;ExecutiveOverview&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574120071958');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='2777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
   <div class="box">
     <div class='tableauPlaceholder' id='viz1574073915680' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;ProductDrilldown&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BACC-Superstore&#47;ProductDrilldown' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;ProductDrilldown&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574073915680');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       <br>
         <br>
-          <p>Is there a trend in sales for the product categories?</p>
+        <h5 class="title">Is there a trend in sales for the product categories?</h5>
           <ul>
               <li>Furniture, Office Supplies, and Technology experience higher sales in the months of September through December. Sales also pick-up in March.</li> 
               <li>This metric shows us when we are having our most sales.</li>
               <li>We can filter the data by region and category.</li>
           </ul>
       <br>
-          <p> How are products doing in terms of sales in each state?</p>
+        <h5 class="title">How are products doing in terms of sales in each state?</h5>
           <ul>
               <li> Used LOD to compute average domestic category sales.</li>
               <li>Red means sales are underperforming and green means sales are surpassing the average domestic category sales.</li>
@@ -186,14 +197,14 @@
       <div class='tableauPlaceholder' id='viz1574066476408' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;CustomerPerformance&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BACC-Superstore&#47;CustomerPerformance' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;CustomerPerformance&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574066476408');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1377px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> 
         <br>
           <br>
-            <p>What is our Consumer Landscape across the United States? </p>
+          <h5 class="title">What is our Consumer Landscape across the United States?</h5>
             <ul>
                 <li>Western region leads in all categories, followed closely by the Eastern region.</li> 
                 <li>The central states are generating more sales than the South; however, they are also leading to the lowest profit ratios</li>
                 <li>There is an expected correlation between the sales and profit. Generally we can see that with more sales, there is higher profit being generated.</li>
             </ul>
         <br>
-            <p>Recommendations:</p>
+          <h5 class="title">Recommendations:</h5>
             <ul>
                 <li>Motive to Increase Sales and Profits across all channels.</li>
                 <li>Increase operational efficiency unlocking insights about trends and patterns to improve decisions to drive better operations and save millions</li>
@@ -201,10 +212,10 @@
     </div>   
     
     <div class="box">
-        <div class='tableauPlaceholder' id='viz1574066646387' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;Shipping&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BACC-Superstore&#47;Shipping' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;Shipping&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574066646387');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> 
+        <div class='tableauPlaceholder' id='viz1574119421620' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;ShippingTrends&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BACC-Superstore&#47;ShippingTrends' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BACC-Superstore&#47;ShippingTrends&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574119421620');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
           <br>
             <br>
-              <p>How efficient is the warehouse at shipping products on time?</p>
+            <h5 class="title">How efficient is the warehouse at shipping products on time?</h5>
               <ul>
                   <li>About 50% of all products are shipped early, the other half is almost evenly split between items being shipped on time and late.</li> 
                   <li>Same day shipment takes first priority; as a result, over 95% of shipments are on time.</li>
@@ -214,15 +225,32 @@
                   <li>The major focus of attention must be on First class shipments where about 80% of shipments are late.</li>
               </ul>
           <br>
-              <p>Recommendations:</p>
+            <h5 class="title">Recommendations:</h5>
               <ul>
                   <li>Adjust shipping windows. For first class allow 1 to 2 days to ship, and for second class 3 to 4 days. This will drastically decrease the percentage of products that are shipped late.</li>
                   <li>Although there are certain things we can’t control, extending a shipping window for a day or two will allow room for flexibility in ensuring all orders are shipped within the expected time.</li>             </li>
               </ul>  
+    </div>
+
+    <div class="box">
+        <div class='tableauPlaceholder' id='viz1574119911216' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WS&#47;WSXDBQXFN&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;WSXDBQXFN' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WS&#47;WSXDBQXFN&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1574119911216');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <br>
           <br>
-              <p>In conclusion, we were able to take their raw data and now Superstore is able make real-time insights with more speed, precision, and confidence to grow their company.</p>
+            <h5 class="title">Final Insights:</h5>
+              <p>In conclusion, we were able to take their raw data and now Superstore is able make real-time insights with more speed, precision, and confidence to grow their company.
+              <br>In oder words we:</p>
+              <ul>
+                  <li>Remodeled Backend</li>
+                  <li>Developed Automated Tableau Dashboards</li> 
+                  <li>Showcased Real-Time Analytics</li> 
+                  <li>Predicted Future Sales</li>   
+                  <li>Provide one central location to access these information</li>        
+              </ul>  
+              <br>
         <h4 class="title" style="text-align: center">“When it comes to data, we got your BACC”</h4> 
         <br>
+            <p align="center"></p>Schedule a consulatation with us today!</p>
+            <a type="submit" class="middle" href="contact.html">Contact Us</a>
     </div>   
      
   <!-- Footer Section -->
