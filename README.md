@@ -8,7 +8,7 @@ We are the Business Analytics Consulting Company (BACC) and when it comes to dat
 Our mission is to help companies unleash the power of their data by developing data pipelines, predictive 
 analytics, and automated dashboards. Our team consists of Christian Bourdeau, Amairani Garcia, Shaun Huang, Anaisa Cerda, and Priyanka Grover. We are going to share our client success story of the retail chain Superstore.
 
-You may click the below link to be directed to our website.
+You may click the below link to be directed to our website
 http://bacc.ga
 
 Using the below link you may directed straight to the tableau
