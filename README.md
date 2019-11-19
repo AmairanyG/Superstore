@@ -9,7 +9,10 @@ Our mission is to help companies unleash the power of their data by developing d
 analytics, and automated dashboards. Our team consists of Christian Bourdeau, Amairani Garcia, Shaun Huang, Anaisa Cerda, and Priyanka Grover. We are going to share our client success story of the retail chain Superstore.
 
 You may click the below link to be directed to our website.
-http://bacc.gq.s3-website-us-west-1.amazonaws.com/
+http://bacc.ga
+
+Using the below link you may directed straight to the tableau
+https://public.tableau.com/profile/cbourdeau#!/vizhome/BACC-Superstore/ExecutiveOverview
 
 ## Background:
 Since 2012, our client Superstore has collected data on sales, customers, products, etc. Although the data is regularly collected in their Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) systems, the reporting team has yet to implement a dashboard or sophisticated reporting process. Their process consisted of manually pulling data from the ERP and CRM and manipulating it in Excel. Initially, this workflow worked, but as their company grew, the data grew along with it and Excel started to slow down. As a result, reports started having longer turnarounds, the reporting team became overworked, and executives got restless. 
