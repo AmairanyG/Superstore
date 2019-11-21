@@ -9,11 +9,11 @@
 Business Analytics Consulting Company (BACC) helps businesses unleash the power of their data by developing data pipelines, predictive 
 analytics, and automating dashboards. 
 
-On the below website we share our client's success story of the retail chain Superstore.
-[BACC](http://bacc.ga)
+On our website, [BACC](http://bacc.ga), we share our client's success story of the retail chain Superstore.
 
-Using the below link you may directed straight to the tableau dashboards used for the analysis.
-[Superstore Dashboards](https://public.tableau.com/profile/cbourdeau#!/vizhome/BACC-Superstore/ExecutiveOverview)
+
+Using this link [Superstore Dashboards](https://public.tableau.com/profile/cbourdeau#!/vizhome/BACC-Superstore/ExecutiveOverview) you may directed straight to the tableau dashboards we created for the analysis.
+
 
 ## Technology Used:
 | Technology   		| Description    						|
@@ -40,7 +40,7 @@ One day, the data reached the maximum number of rows workable in Excel and repor
 + **Which products are performing well? Which are not?**
 ![Products](Images/product_performance.PNG)
 
-+ **Who are our most profitable customers?
++ **Who are our most profitable customers?**
 ![Cusotmers](Images/customer_performance.PNG)
 
 + **How efficient is the warehouse team at shipping products on time?**
