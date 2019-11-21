@@ -10,10 +10,10 @@ Business Analytics Consulting Company (BACC) helps businesses unleash the power 
 analytics, and automating dashboards. 
 
 On the below website we share our client's success story of the retail chain Superstore.
-http://bacc.ga
+[BACC](http://bacc.ga)
 
 Using the below link you may directed straight to the tableau dashboards used for the analysis.
-https://public.tableau.com/profile/cbourdeau#!/vizhome/BACC-Superstore/ExecutiveOverview
+[Superstore Dashboards](https://public.tableau.com/profile/cbourdeau#!/vizhome/BACC-Superstore/ExecutiveOverview)
 
 ## Technology Used:
 | Technology   		| Description    						|
@@ -29,24 +29,24 @@ Since 2012, Superstore has collected data on sales, customers, products, etc. Al
 One day, the data reached the maximum number of rows workable in Excel and reporting was brought to a screeching halt. The executives lost visibility into their business, management could not measure their KPIs, and analysts could not develop reports. The CEO and other high-level executives had a number of questions on the performance of their company but could not get their team to provide thorough insights, so they decided to get help from BACC to fix its data pipeline, automate standard reports, and ask deeper questions.
             
 ## Business Questions:
-1. How do we fix our data process so that Superstore can get reports faster?
++ **How do we fix our data process so that Superstore can get reports faster?**
 
 ![Pipeline](Images/pipeline.PNG)
 ![Features](Images/features.PNG)
 
-2. How are sales performing year-over-year?
++ **How are sales performing year-over-year?**
 ![Executive Overview](Images/executive_overview.PNG)
 
-3. Which products are performing well? Which are not?
++ **Which products are performing well? Which are not?**
 ![Products](Images/product_performance.PNG)
 
-4. Who are our most profitable customers?
++ **Who are our most profitable customers?
 ![Cusotmers](Images/customer_performance.PNG)
 
-5. How efficient is the warehouse team at shipping products on time?
++ **How efficient is the warehouse team at shipping products on time?**
 ![Shipping](Images/shipping_trends.PNG)
 
-6. What does our sales projection look like for next year?
++ **What does our sales projection look like for next year?**
 ![Forecast](Images/forecast.PNG)
 
 
