@@ -21,6 +21,7 @@ Using this link [Superstore Dashboards](https://public.tableau.com/profile/cbour
 |  Github      		| HTML, CSS, Bootstrap						|
 |  AWS      		| Amazon Web Services (RDS, S3, AWS platform) was used as Cloud Storage, Interface between the Database and Website, as well as to Deploy the Website 			|
 |  Zepl, PySpark   	            | Cloud Computing    		                                                            |
+|  Relational Database	                        | PostgresSQL, PgAdmin		                                                            |
 |  Python 	                        | Machine Learning (Sklearn, TensorFlow, Pandas)	                                    |
 |  Tableau	                        | Data Visualization		                                                            |
 
