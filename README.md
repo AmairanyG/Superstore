@@ -1,15 +1,15 @@
 # Superstore
 <img src="Images/BACC Logo.png" class="center vizualization"  alt="BACC Logo">
 
-                                                       By
+                                                         By
 						
-		 Christian Bourdeau, Amairani Garcia, Shan Huang, Anaisa Cerda, and Priyanka Grover
+		   Christian Bourdeau, Amairani Garcia, Shan Huang, Anaisa Cerda, and Priyanka Grover
 
 ## Project Overview:
 Business Analytics Consulting Company (BACC) helps businesses unleash the power of their data by developing data pipelines, predictive 
 analytics, and automating dashboards. 
 
-On our website, [BACC](http://bacc.ga), we share our client's success story of the retail chain Superstore.
+On our website [BACC](http://bacc.ga) we share our client's success story of the retail chain Superstore.
 
 
 Using this link [Superstore Dashboards](https://public.tableau.com/profile/cbourdeau#!/vizhome/BACC-Superstore/ExecutiveOverview) you may directed straight to the tableau dashboards we created for the analysis.
@@ -50,6 +50,6 @@ One day, the data reached the maximum number of rows workable in Excel and repor
 ![Forecast](Images/forecast.PNG)
 
 
-                                          "When it comes to data, we got your BACC"
+                                        "When it comes to data, we got your BACC"
 
        
