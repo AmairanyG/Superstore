@@ -1,7 +1,7 @@
 # Superstore
 <img src="Images/BACC Logo.png" class="center vizualization"  alt="BACC Logo">
 
-                                                         By
+                                                       By
 						
 		 Christian Bourdeau, Amairani Garcia, Shan Huang, Anaisa Cerda, and Priyanka Grover
 
@@ -30,13 +30,26 @@ One day, the data reached the maximum number of rows workable in Excel and repor
             
 ## Business Questions:
 1. How do we fix our data process so that Superstore can get reports faster?
+
+![Pipeline](Images/pipeline.PNG)
+![Features](Images/features.PNG)
+
 2. How are sales performing year-over-year?
+![Executive Overview](Images/executive_overview.PNG)
+
 3. Which products are performing well? Which are not?
+![Products](Images/product_performance.PNG)
+
 4. Who are our most profitable customers?
+![Cusotmers](Images/customer_performance.PNG)
+
 5. How efficient is the warehouse team at shipping products on time?
+![Shipping](Images/shipping_trends.PNG)
+
 6. What does our sales projection look like for next year?
+![Forecast](Images/forecast.PNG)
 
 
-                                             "When it comes to data, we got your BACC"
+                                          "When it comes to data, we got your BACC"
 
        
